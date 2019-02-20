@@ -1,0 +1,19 @@
+<div>
+  Your message is {{message | titlecase}}
+  <p></p>
+  Product: {{product | json}}
+  <p></p>
+  Today is: {{today | date:'dd-MMMM-yyyy'}}
+  <p></p>
+  Price is: {{price | currency:'\u20b9'}}
+  <p></p>
+  <label>Enter some text:
+    <input type="text" [(ngModel)]="myText">
+  </label>
+  <p></p>
+  Original text: {{myText}}
+  <p></p>
+  Reversed text: {{myText | reversetext}}
+  <p></p>
+  Piglatin text: {{myText | piglatin}}
+</div>
